@@ -9,6 +9,7 @@ The sequence diagram below shows a way to achieve this by using an "inner REST c
 \
 \
 <img src="https://i.imgur.com/qIloZ5m.png" width="800"/>
+
 \
 \
 ## Components
