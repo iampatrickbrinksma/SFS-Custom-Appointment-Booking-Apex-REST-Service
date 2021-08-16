@@ -25,6 +25,9 @@ The following Apex Classes are part of the metadata:
 
 Once you deployed the code to your org and adjusted the values in the Apex Class RESTFieldServiceParams use a REST API Client of choice (Workbench or PostMan) to send REST API requests and see the responses. See the following sections for an example.
 
+### Authentication for inner REST callout
+See https://salesforceprofs.com/salesforce-to-salesforce-rest-api-integration/ on how to setup Auth. Provider and Named Credentials to be able to call the inner Apex REST Service. The Apex Classes RESTGetSlots and RESTScheduleJob include a reference to the Named Credentials name, so update that if needed.
+
 ### Field Service Routing Settings
 
 Field Service Settings → Scheduling → Routing, make sure that "Enable Street Level Routing" - to use SLR - is set to true and optionally "Enable Point-to-Point Predictive Routing" - to use P2P - also to true.
