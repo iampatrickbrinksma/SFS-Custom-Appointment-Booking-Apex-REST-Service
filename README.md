@@ -3,15 +3,11 @@
 ## Introduction
 
 With Salesforce Field Service you can book appointments. You can expose this functionality via Apex REST services to retrieve available time slots, select a time slot, and schedule the appointment. In order to calculate travel time, the FSL Managed Package performs a callout. One of the Salesforce platform limitations is that you cannot perform a callout when there are pending transactions. This results in the requirement to have the creation of the Work Order and Service Appointment in its own transaction, and retrieving the available time slots also in its own transaction respectively.
-\
-\
+
 The sequence diagram below shows a way to achieve this by using an "inner REST call" to create the Work Order and Service Appointment while the "outer REST call" - the Apex REST Service the client calls - retrieves the available time slots.
-\
-\
+
 <img src="https://i.imgur.com/qIloZ5m.png" width="800"/>
 
-\
-\
 ## Components
 
 The following Apex Classes are part of the metadata:
