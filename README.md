@@ -1,5 +1,7 @@
 ## Introduction
 
+>Please read this knowledge article: https://help.salesforce.com/s/articleView?id=000396257&type=1
+
 When Salesforce Field Service retrieves the available time slots when booking an appointment, gets the qualified and available candidates for an appointment or schedules an appointment the Field Service managed package performs a callout to calculate the travel times. This callout is performed when Street Level Routing (SLR) or Point-to-Point Predictive (P2P) is enabled in the Field Service Settings, and the specific travel routes are not cached in the SLR Cache object. This is valid for the legacy scheduling and optimization service, also referred to as LS.
 When using the new Enhanced Scheduling and Optimization (ES&O) a callout is performed with every scheduling and optimization operations, including the validation of work rules on the Gantt. ES&O always uses P2P for travel time calculations which is performed within the ES&O service.
 In both scenarios it is possible that the following exception is thrown:
