@@ -1,3 +1,6 @@
+## Disclaimer
+IMPORTANT: This code is not intended to be deployed directly to a Salesforce production environment, but to be used as an example. This is not a Salesforce product and is not officially supported by Salesforce.
+
 ## Introduction
 
 >Please read this knowledge article: https://help.salesforce.com/s/articleView?id=000396257&type=1
